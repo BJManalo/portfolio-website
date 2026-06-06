@@ -6,25 +6,28 @@
   --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
 
-  /* Brand Palette Integration */
-  --color-brand-coral: #E63946;
-  --color-brand-cream: #F1FAEE;
-  --color-brand-teal: #A8DADC;
-  --color-brand-steel: #457B9D;
-  --color-brand-navy: #1D3557;
+  /* Warm Sunset & Light Sand Palette */
+  --color-warm-light-bg: #FAF9F6;  /* Grayish white / Sand-silk background */
+  --color-warm-card: #FFFFFF;      /* Clean white card base */
+  --color-brand-amber: #EA580C;    /* Bright amber accent (darkened slightly for readability) */
+  --color-brand-orange: #F97316;   /* Rich copper orange */
+  --color-brand-coral: #E11D48;    /* Vibrant rose/coral */
+  --color-brand-dark: #1C1917;     /* Deep stone charcoal for text readability */
+  --color-brand-muted: #78716C;    /* Muted warm-gray for subtext */
+  --color-brand-border: #E7E5E4;   /* Soft warm-gray border */
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--color-brand-cream);
-  color: var(--color-brand-navy);
+  background-color: var(--color-warm-light-bg);
+  color: var(--color-brand-dark);
   -webkit-font-smoothing: antialiased;
 }
 
 /* Premium styling overrides & utilities */
 ::selection {
-  background-color: #e5e5e5;
-  color: #000000;
+  background-color: rgba(249, 115, 22, 0.18);
+  color: var(--color-brand-dark);
 }
 
 /* Fade-in animation class */
@@ -41,4 +44,21 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Background glow gradient animation */
+.glow-spot {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, rgba(244, 63, 94, 0.02) 50%, rgba(0,0,0,0) 100%);
+  filter: blur(75px);
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow 10s ease-in-out infinite alternate;
+}
+
+@keyframes float-glow {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, -30px) scale(1.15); }
 }
