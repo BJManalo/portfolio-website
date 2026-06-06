@@ -5,12 +5,19 @@
 @theme {
   --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* Brand Palette Integration */
+  --color-brand-coral: #E63946;
+  --color-brand-cream: #F1FAEE;
+  --color-brand-teal: #A8DADC;
+  --color-brand-steel: #457B9D;
+  --color-brand-navy: #1D3557;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #fafafa;
-  color: #171717;
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-navy);
   -webkit-font-smoothing: antialiased;
 }
 
