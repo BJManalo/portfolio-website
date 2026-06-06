@@ -620,12 +620,6 @@ onUnmounted(() => {
         <div class="text-xs text-[#737373]">
           &copy; 2026 Bernie Jay Manalo. All rights reserved.
         </div>
-        
-        <div class="flex items-center space-x-6">
-          <a href="#" class="text-xs tracking-wider uppercase text-[#737373] hover:text-[#171717] transition-colors duration-200">Twitter</a>
-          <a href="#" class="text-xs tracking-wider uppercase text-[#737373] hover:text-[#171717] transition-colors duration-200">GitHub</a>
-          <a href="#" class="text-xs tracking-wider uppercase text-[#737373] hover:text-[#171717] transition-colors duration-200">LinkedIn</a>
-        </div>
       </div>
     </footer>
   </div>
